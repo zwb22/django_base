@@ -7,7 +7,7 @@ For more information on this file, see
 https://docs.djangoproject.com/en/3.2/topics/settings/
 
 For the full list of settings and their values, see
-https://docs.djangoproject.com/en/3.2/ref/settings/
+https://docsinstall.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
@@ -29,7 +29,7 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-
+# 注册/安装子应用
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # 以下两种都可以
+    # 'zwb_book.apps.ZwbBookConfig',
+    # 'zwb_book',
 ]
 
 MIDDLEWARE = [
