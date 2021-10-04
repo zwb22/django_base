@@ -23,9 +23,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-yxa@c3k)0l427xjzzkku$9--c&y-1l$h#t6w721o-em5_^v&33'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+# 在我们开发的时候，我们需要看到更多的信息，所以得开启debug,正式上线项目时需关闭debug
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# 允许以什么样的形式来访问我们的项目，默认为127.0.0.1
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -130,3 +132,8 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# 告知系统 我们的静态文件在哪里
+STATICFILES_DIRS = [
+    f'{BASE_DIR}/static',
+]
