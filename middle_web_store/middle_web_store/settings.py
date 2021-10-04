@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # 以下两种都可以
-    # 'zwb_book.apps.ZwbBookConfig',
+    'zwb_book.apps.ZwbBookConfig',
     # 'zwb_book',
 ]
 
@@ -105,10 +105,10 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
-
-LANGUAGE_CODE = 'en-us'
-
-TIME_ZONE = 'UTC'
+# 设置语言
+LANGUAGE_CODE = 'zh-Hans'
+# 设置时区
+TIME_ZONE = 'Asia/Shanghai'
 
 USE_I18N = True
 
