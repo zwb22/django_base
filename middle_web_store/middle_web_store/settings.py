@@ -54,10 +54,14 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'middle_web_store.urls'
 
+# 和模板配置相关的
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            # 告诉系统：我们的模板文件放在哪里
+            f'{BASE_DIR}/templates',
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
