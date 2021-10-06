@@ -79,6 +79,3 @@ class PeopleInfo(models.Model):
 
 	def __str__(self):
 		return self.people_name
-
-
-
